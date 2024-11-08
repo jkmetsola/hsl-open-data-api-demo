@@ -51,7 +51,7 @@ RUN apt-get update && \
     apt-get install --no-install-recommends -y \
     docker.io=20.10.24+dfsg1-1+b3 \
     vim=2:9.0.1378-2 \
-    less=590-2 && \
+    less=590-2.1~deb12u2 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     if ! getent group "$HOST_GID" > /dev/null; then groupadd -g "$HOST_GID" user_host; fi && \
